@@ -2,32 +2,51 @@
 <html lang="en" xmlns="http://www.w3.org/2000/svg">
 
 <head>
+    <script src="scripts/smoothScroll.js"></script>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/favicon.ico">
+
     <title>Cristóbal Allendes</title>
 </head>
 
 <body>
     <div class="main">
+        <div id="top-nav-bar">
+            <div class="icons">
+                <a href="https://github.com/No-tengo-nombre">
+                    <img src="img/github.svg" alt="Github" title="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/cristobal-allendes-molina/">
+                    <img src="img/linkedin.svg" alt="LinkedIn" title="LinkedIn">
+                </a>
+                <a href="mailto:callendes.molina@gmail.com">
+                    <img src="img/email.svg" alt="Email" title="Email: callendes.molina@gmail.com">
+                </a>
+            </div>
+            <div class="index">
+                <li>
+                    <p onclick="smoothScroll('description')">
+                        Sobre mí
+                    </p>
+                </li>
+                <li>
+                    <p onclick="smoothScroll('proyects')">
+                        Proyectos
+                    </p>
+                </li>
+                <li>
+                    <p onclick="smoothScroll('education')">
+                        Educación
+                    </p>
+                </li>
+            </div>
+        </div>
+
         <!-- Description -->
-        <div class="description-row">
+        <div id="description" class="description-row">
             <div class="description">
-                <div class="icons">
-                    <a href="https://github.com/No-tengo-nombre">
-                        <img src="img/github.svg" alt="Github" title="GitHub" width="75pt">
-                        <!-- <object data="img/github.svg" type="image/svg+xml" width="75pt"></object> -->
-                    </a>
-                    <a href="https://www.linkedin.com/in/cristobal-allendes-molina/">
-                        <img src="img/linkedin.svg" alt="LinkedIn" title="LinkedIn" width="75pt">
-                        <!-- <object data="img/linkedin.svg" type="image/svg+xml" width="75pt"></object> -->
-                    </a>
-                    <a href="mailto:callendes.molina@gmail.com">
-                        <img src="img/email.svg" alt="Email" title="Email: callendes.molina@gmail.com" width="75pt">
-                        <!-- <object data="img/email.svg" type="image/svg+xml" width="75pt"></object> -->
-                    </a>
-                </div>
                 <div class="introduction">
-                    <hr>
                     <h1>
                         ¡Bienvenid@!
                     </h1>
@@ -59,7 +78,7 @@
         </div>
 
         <!-- Proyects -->
-        <div class="proyects-row">
+        <div id="proyects" class="proyects-row">
             <div class="title">
                 <h2>
                     Proyectos
@@ -114,7 +133,7 @@
         </div>
 
         <!-- Education -->
-        <div class="education-row">
+        <div id="education" class="education-row">
             <div class="title">
                 <h2>
                     Educación
