@@ -8,15 +8,31 @@
 
 body {
     margin: 0%;
-    color: #ffffff;
+    color: #cccccc;
     font-size: 18pt;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scrollbar-width: 15px;
+    scrollbar-color: #cccccc #0e0e0e;
 }
 
 hr {
     border: var(--hr-size) solid var(--bar-color);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #0e0e0e;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 20px;
+    border: 3px solid #0e0e0e;
 }
 
 /* Main elements */
@@ -36,7 +52,8 @@ hr {
     left: 0%;
     width: 100%;
     height: var(--nav-bar-size);
-    background-color: rgba(14, 14, 14, 0.95);
+    /* background-color: rgba(14, 14, 14, 0.95); */
+    background-image: linear-gradient(rgba(14, 14, 14, 0.95), rgba(7, 7, 7, 0.95));
 }
 
 #top-nav-bar .icons {
@@ -65,12 +82,12 @@ hr {
     display: inline;
     float: left;
     flex: auto;
-    color: #ffffff;
 }
 
 #top-nav-bar .index li:hover {
     background-color: rgba(30, 30, 30, 0.5);
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
+    cursor: pointer;
 }
 
 /* Description row */
