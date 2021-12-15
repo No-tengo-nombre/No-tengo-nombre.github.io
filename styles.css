@@ -87,12 +87,12 @@ hr {
 
 .proyects-row .title {
     text-align: center;
-    flex: 5%;
+    flex: 15%;
     padding-right: 2%;
 }
 
 .proyects-row .entries {
-    flex: 95%;
+    flex: 85%;
     font-size: 16pt;
     display: flex;
     flex-direction: column;
@@ -144,12 +144,12 @@ hr {
 
 .education-row .title {
     text-align: center;
-    flex: 5%;
+    flex: 15%;
     padding-right: 2%;
 }
 
 .education-row .entries {
-    flex: 95%;
+    flex: 85%;
     font-size: 16pt;
     display: flex;
     flex-direction: column;
