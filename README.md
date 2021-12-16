@@ -2,7 +2,6 @@
 This is a repository to host my personal webpage using "GitHub Pages".
 
 ## License
----
 MIT License
 
 Copyright (c) 2021 Cristóbal Allendes
