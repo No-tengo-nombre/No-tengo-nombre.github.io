@@ -243,6 +243,7 @@ pr-entry .links {
 }
 
 pr-entry .links img {
+    flex: auto;
     height: 30px;
 }
 
