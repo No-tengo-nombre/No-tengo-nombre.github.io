@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="es" xmlns="http://www.w3.org/2000/svg">
+<html lang="es">
     
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     
-    <script src="js/langSelect.js"></script>
-    <script src="js/smoothScroll.js"></script>
+    <script src="js/langFunctions.js"></script>
+    <script src="js/langSelectIndex.js"></script>
     <script src="js/langData.js"></script>
+    <script src="js/smoothScroll.js"></script>
 
     <link rel="stylesheet" href="css/styles.css">
+    
     <link rel="icon" href="img/favicon.ico">
 
     <title>Cristóbal Allendes</title>
@@ -67,17 +70,24 @@
                 <pr-entry>
                     <h3 class="title" data-key="proy-p1-title"></h3>
                     <div class="description" data-key="proy-p1-desc"></div>
-                    <div class="proyect-access" data-key="proy-p1-link"></div>
+                    <div class="links">
+                        <a href="#" id="p1-link1">
+                            <img src="img/www.svg" alt="Web" title="Website">
+                        </a>
+                        <a href="https://github.com/No-tengo-nombre/signpy">
+                            <img src="img/github.svg" alt="GitHub" title="GitHub repo">
+                        </a>
+                    </div>
                 </pr-entry>
                 <pr-entry>
                     <h3 class="title" data-key="proy-p2-title"></h3>
                     <div class="description" data-key="proy-p2-desc"></div>
-                    <div class="proyect-access" data-key="proy-p2-link"></div>
+                    <div class="links" data-key="proy-p2-link"></div>
                 </pr-entry>
                 <pr-entry>
                     <h3 class="title" data-key="proy-p3-title"></h3>
                     <div class="description" data-key="proy-p3-desc"></div>
-                    <div class="proyect-access" data-key="proy-p3-link"></div>
+                    <div class="links" data-key="proy-p3-link"></div>
                 </pr-entry>
             </div>
         </row>
@@ -126,8 +136,10 @@
             </div>
         </footer>
     </div>
+
+    <script src="js/activeNavBarItem.js"></script>
+    <script src="js/indexHrefSetter.js"></script>
 </body>
 
-<script src="js/activeNavBarItem.js"></script>
 
 </html>

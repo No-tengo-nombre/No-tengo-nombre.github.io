@@ -1,5 +1,5 @@
 let urlData = {
-    "p1-link": "proyects/signpy.html",
+    "p1-link1": "proyects/signpy.html",
 };
 
 let lang = getLanguage(true);
