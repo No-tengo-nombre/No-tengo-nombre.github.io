@@ -4,6 +4,8 @@
     --vsep-width: 2px;
     --icon-size: 50px;
     --nav-bar-size: 80px;
+    --active-bar-size: 5px;
+    --active-bar-color: #ffffff;
 }
 
 body {
@@ -42,6 +44,11 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
 }
 
+.main row {
+    display: flex;
+    flex-direction: row;
+}
+
 /* Navigation bar */
 
 #top-nav-bar {
@@ -52,7 +59,6 @@ body::-webkit-scrollbar-thumb {
     left: 0%;
     width: 100%;
     height: var(--nav-bar-size);
-    /* background-color: rgba(14, 14, 14, 0.95); */
     background-image: linear-gradient(rgba(14, 14, 14, 0.95), rgba(7, 7, 7, 0.95));
 }
 
@@ -62,7 +68,6 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
-    /* padding: 1%; */
     border-right: var(--vsep-width) solid var(--bar-color);
 }
 
@@ -78,16 +83,28 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
-#top-nav-bar .index li {
+.nav-item {
     display: inline;
     float: left;
     flex: auto;
 }
 
-#top-nav-bar .index li:hover {
+.nav-item:hover {
     background-color: rgba(30, 30, 30, 0.5);
     transition: background-color 0.2s;
     cursor: pointer;
+}
+
+.nav-item.active {
+    background-color: rgba(20, 20, 20, 0.6);
+    border-bottom: var(--active-bar-size) solid var(--active-bar-color);
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    transition: all 0.1s;
+}
+
+.nav-item.active:hover {
+    background-color: rgba(50, 50, 50, 0.5);
 }
 
 /* Description row */
@@ -204,6 +221,7 @@ body::-webkit-scrollbar-thumb {
 
 .main .education-row {
     background-color: #200e0e;
+    text-align: justify;
     display: flex;
     flex-direction: row;
     padding-left: 5%;
