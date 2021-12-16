@@ -48,6 +48,11 @@ body::-webkit-scrollbar-thumb {
 .main row {
     display: flex;
     flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: justify;
 }
 
 /* Navigation bar */
@@ -70,6 +75,10 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-around;
     align-items: baseline;
     border-right: var(--vsep-width) solid var(--bar-color);
+}
+
+.icons img {
+    height: var(--icon-size);
 }
 
 #top-nav-bar .index {
@@ -108,172 +117,6 @@ body::-webkit-scrollbar-thumb {
     background-color: rgba(50, 50, 50, 0.5);
 }
 
-/* Description row */
-
-.main .description-row {
-    background-color: #0e1215;
-    display: flex;
-    flex-direction: row;
-    padding-top: var(--nav-bar-size);
-    padding-bottom: 3%;
-}
-
-.description-row .side-banner {
-    flex: 10%;
-    padding: 2%;
-    background-image: url(https://user-images.githubusercontent.com/58194113/145751939-38e7efd0-9d6e-4173-ace8-d254832d1621.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.description-row .description {
-    flex: 90%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 5%;
-}
-
-.description .icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
-    padding: 1%;
-}
-
-.icons img {
-    height: var(--icon-size);
-}
-
-.description .introduction {
-    align-items: center;
-    justify-content: center;
-    font-size: 20pt;
-    font-style: italic;
-    text-align: justify;
-}
-
-.description .about-me {
-    align-items: center;
-    padding-left: 5%;
-    text-align: justify;
-}
-
-/* Proyects row */
-
-.main .proyects-row {
-    background-color: #0e0e20;
-    text-align: justify;
-    display: flex;
-    flex-direction: row;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-.proyects-row .title {
-    text-align: center;
-    flex: 15%;
-    padding-right: 2%;
-}
-
-.proyects-row .entries {
-    flex: 85%;
-    font-size: 16pt;
-    display: flex;
-    flex-direction: column;
-    padding-left: 2%;
-    border-left: var(--vsep-width) solid var(--bar-color);
-}
-
-.entries .proyect {
-    text-align: justify;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.proyect .title {
-    flex: 25%;
-    font-style: italic;
-    padding-right: 1%;
-    text-align: center;
-}
-
-.proyect .description {
-    flex: 65%;
-    padding-left: 1%;
-    padding-right: 1%;
-    border-left: var(--vsep-width) solid var(--bar-color);
-    border-right: var(--vsep-width) solid var(--bar-color);
-}
-
-.proyect .proyect-access {
-    flex: 15%;
-    padding-left: 1%;
-    text-align: center;
-}
-
-/* Education row */
-
-.main .education-row {
-    background-color: #200e0e;
-    text-align: justify;
-    display: flex;
-    flex-direction: row;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
-
-.education-row .title {
-    text-align: center;
-    flex: 15%;
-    padding-right: 2%;
-}
-
-.education-row .entries {
-    flex: 85%;
-    font-size: 16pt;
-    display: flex;
-    flex-direction: column;
-    padding-left: 2%;
-    border-left: var(--vsep-width) solid var(--bar-color);
-}
-
-.entries .education-entry {
-    display: flex;
-    flex-direction: column;
-}
-
-.education-entry .title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.education-entry .title .name {
-    text-align: left;
-    font-style: italic;
-}
-
-.education-entry .title .date {
-    font-size: 14pt;
-    text-align: left;
-    padding-left: 2%;
-    color: #aaaaaa;
-}
-
-.education-entry .description {
-    text-align: justify;
-    padding-left: 5%;
-}
-
 /* Footer */
 
 footer {
@@ -306,4 +149,140 @@ footer .language-select {
 .language-select .language {
     cursor: pointer;
     height: calc(0.6 * var(--footer-size));
+}
+
+/* Description row */
+
+row#description {
+    background-color: #0e1215;
+    padding-top: var(--nav-bar-size);
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+#description .side-banner {
+    flex: 10%;
+    padding: 2%;
+    background-image: url(https://user-images.githubusercontent.com/58194113/145751939-38e7efd0-9d6e-4173-ace8-d254832d1621.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#description .description {
+    flex: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    align-items: center;
+    text-align: justify;
+}
+
+.description .introduction {
+    font-size: 20pt;
+    font-style: italic;
+}
+
+.description .about-me {
+    padding-left: 5%;
+}
+
+/* Proyects row */
+
+row#proyects {
+    background-color: #0e0e20;
+}
+
+#proyects .title {
+    text-align: center;
+    flex: 15%;
+    padding-right: 2%;
+}
+
+#proyects .entries {
+    flex: 85%;
+    font-size: 16pt;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    border-left: var(--vsep-width) solid var(--bar-color);
+}
+
+.entries pr-entry {
+    text-align: justify;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+pr-entry .title {
+    flex: 25%;
+    font-style: italic;
+    padding-right: 1%;
+    text-align: center;
+}
+
+pr-entry .description {
+    flex: 65%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-left: var(--vsep-width) solid var(--bar-color);
+    border-right: var(--vsep-width) solid var(--bar-color);
+}
+
+pr-entry .proyect-access {
+    flex: 15%;
+    padding-left: 1%;
+    text-align: center;
+}
+
+/* Education row */
+
+row#education {
+    background-color: #200e0e;
+}
+
+#education .title {
+    text-align: center;
+    flex: 15%;
+    padding-right: 2%;
+}
+
+#education .entries {
+    flex: 85%;
+    font-size: 16pt;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    border-left: var(--vsep-width) solid var(--bar-color);
+}
+
+.entries ed-entry {
+    display: flex;
+    flex-direction: column;
+}
+
+ed-entry .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ed-entry .title .name {
+    text-align: left;
+    font-style: italic;
+}
+
+ed-entry .title .date {
+    font-size: 14pt;
+    text-align: left;
+    padding-left: 2%;
+    color: #aaaaaa;
+}
+
+ed-entry .description {
+    text-align: justify;
+    padding-left: 5%;
 }
