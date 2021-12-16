@@ -42,7 +42,7 @@ let langdata = {
                 "desc-about-me-title": "About me",
                 "desc-about-me-p1": "My biggest passion is learning about different topics, especially when I can link them back to electrical engineering: from pure and applied mathematics, to physics and astronomy, including disciplines such as mechanical engineering and software development.",
                 "desc-about-me-p2": "My hobbies are programming, music and videogames, and I love when I can relate them to my field of study. For this reason I have developed an interest in proyects such as the creation of signal processing software, which allows me to link programming with signal analysis, and I have even been able to involve music through the implementation of synthesizers using this software.",
-                "proy-title": "Proyectss",
+                "proy-title": "Proyects",
                 "proy-p1-title": "Test 1 title",
                 "proy-p1-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum at tempor commodo ullamcorper a. Est ante in nibh mauris cursus. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Maecenas accumsan lacus vel facilisis volutpat.",
                 "proy-p1-link": "Test 1 link",
