@@ -1,4 +1,4 @@
-let langdata = {
+let langdataIndex = {
     "languages": {
         "es": {
             "strings": {
@@ -62,6 +62,27 @@ let langdata = {
                 "ed-e3-title": "Longer title",
                 "ed-e3-date": "March 2019 - current",
                 "ed-e3-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum at tempor commodo ullamcorper a. Est ante in nibh mauris cursus. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Maecenas accumsan lacus vel facilisis volutpat.",
+            },
+        },
+    },
+}
+
+let langdataSignpy = {
+    "languages": {
+        "es": {
+            "strings": {
+                "nav-about-me": "Sobre mí",
+                "nav-proyects": "Proyectos",
+                "nav-education": "Educación",
+                "proy-title": "SignPy",
+                "proy-short-desc": "Software de procesamiento digital de señales"
+            },
+        },
+        "en": {
+            "strings": {
+                "nav-about-me": "About me",
+                "nav-proyects": "Proyects",
+                "nav-education": "Education",
             },
         },
     },
