@@ -2,8 +2,9 @@
     --bar-color: #ffffff;
     --hr-size: 3px;
     --vsep-width: 2px;
-    --icon-size: 50px;
+    --icon-size: 40px;
     --nav-bar-size: 80px;
+    --footer-size: 40px;
     --active-bar-size: 5px;
     --active-bar-color: #ffffff;
 }
@@ -63,7 +64,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #top-nav-bar .icons {
-    flex: 50%;
+    flex: 40%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -72,7 +73,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #top-nav-bar .index {
-    flex: 50%;
+    flex: 60%;
     padding-left: 1%;
     padding-right: 1%;
     text-align: center;
@@ -271,4 +272,37 @@ body::-webkit-scrollbar-thumb {
 .education-entry .description {
     text-align: justify;
     padding-left: 5%;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    top: calc(100% - var(--footer-size));
+    left: 0%;
+    width: 100%;
+    height: var(--footer-size);
+    background-image: linear-gradient(rgba(7, 7, 7, 0.95), rgba(14, 14, 14, 0.95));
+}
+
+footer .copyright {
+    flex: 40%;
+    text-align: left;
+    font-size: 10pt;
+    padding-left: 3%;
+}
+
+footer .language-select {
+    flex: 60%;
+    text-align: right;
+    padding-right: 1%;
+    font-size: 15pt;
+}
+
+.language-select .language {
+    cursor: pointer;
+    height: calc(0.6 * var(--footer-size));
 }

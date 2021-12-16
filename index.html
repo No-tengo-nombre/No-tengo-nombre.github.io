@@ -2,10 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/2000/svg">
 
 <head>
-    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script> -->
-    
     <script src="scripts/smoothScroll.js"></script>
-    <!-- <script src="scripts/activeNavBarItem.js"></script> -->
 
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/favicon.ico">
@@ -61,8 +58,8 @@
             </ul>
         </div>
 
+
         <!-- Description -->
-        <!-- <div id="description" class="row description-row"> -->
         <row id="description" class="description-row">
             <div class="description">
                 <div class="introduction">
@@ -95,8 +92,8 @@
             <div class="side-banner"></div>
         </row>
 
+
         <!-- Proyects -->
-        <!-- <div id="proyects" class="row proyects-row"> -->
         <row id="proyects" class="proyects-row">
             <div class="title">
                 <h2>
@@ -150,8 +147,8 @@
             </div>
         </row>
 
+
         <!-- Education -->
-        <!-- <div id="education" class="row education-row"> -->
         <row id="education" class="education-row">
             <div class="title">
                 <h2>
@@ -209,29 +206,25 @@
                     </div>
                 </div>
             </div>
-        <!-- </div> -->
         </row>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="copyright">
+                <p>
+                    Copyright &copy; 2021-2021, Cristóbal Allendes
+                </p>
+            </div>
+            <div class="language-select">
+                <!-- https://flagicons.lipis.dev/ -->
+                <img class="language" src="img/es.svg" alt="Español" title="Español">
+                <img class="language" src="img/gb.svg" alt="English" title="English">
+            </div>
+        </footer>
     </div>
 </body>
 
 <script src="scripts/activeNavBarItem.js"></script>
-<!-- <script>
-    const li = document.querySelectorAll(".nav-item");
-    const rows = document.querySelectorAll("row");
 
-    console.log(li);
-    console.log(rows);
-
-    function activeMenu() {
-        let len = rows.length;
-        while (--len && window.scrollY + 97 < rows[len].offsetTop) {}
-        li.forEach(ltx => ltx.classList.remove("active"));
-        li[len].classList.add("active");
-    }
-
-    activeMenu();
-    window.addEventListener("scroll", activeMenu);
-</script> -->
-
-<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script> -->
 </html>
