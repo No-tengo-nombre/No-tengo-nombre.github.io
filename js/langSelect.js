@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     applyStrings(zones);
 
     let lang = findLocaleMatch();
-    // let container = document.querySelector("html [lang*=${lang}]");
     let container = document.querySelector(`html [lang*=${lang}]`);
+    console.log(container);
     container.className = "lang-match";
 });
 
@@ -31,4 +31,9 @@ function findLocaleMatch() {
     locales = locales.filter(l => locale == l);
     langMatch = (locales.length > 0) ? locales[0] : langMatch;
     return langMatch;
+}
+
+function setLanguage(lang) {
+    document.documentElement.setAttribute("lang", lang);
+    location.reload();
 }
