@@ -7,12 +7,14 @@
     --footer-size: 40px;
     --active-bar-size: 5px;
     --active-bar-color: #ffffff;
+    --color1: #0e1215;
+    --color2: #0e0e20;
 }
 
 body {
     margin: 0%;
     color: #cccccc;
-    font-size: 18pt;
+    font-size: 15pt;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scrollbar-width: 15px;
     scrollbar-color: #cccccc #0e0e0e;
@@ -53,6 +55,87 @@ body::-webkit-scrollbar-thumb {
     padding-top: 3%;
     padding-bottom: 3%;
     text-align: justify;
+}
+
+row:nth-child(even) {
+    background-color: var(--color1);
+}
+
+row:nth-child(odd) {
+    background-color: var(--color2);
+}
+
+row .title {
+    text-align: center;
+    flex: 15%;
+    padding-right: 2%;
+}
+
+row .entries {
+    flex: 85%;
+    font-size: 16pt;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    border-left: var(--vsep-width) solid var(--bar-color);
+}
+
+entry {
+    display: flex;
+    flex-direction: column;
+}
+
+entry .title.w-links {
+    flex: 25%;
+    font-style: italic;
+    padding-right: 1%;
+    text-align: center;
+}
+
+entry .title.w-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+entry .title.w-date .name {
+    text-align: left;
+    font-style: italic;
+}
+
+entry .title.w-date .date {
+    font-size: 14pt;
+    text-align: left;
+    padding-left: 2%;
+    color: #aaaaaa;
+}
+
+entry .description.w-links {
+    flex: 65%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-left: var(--vsep-width) solid var(--bar-color);
+    border-right: var(--vsep-width) solid var(--bar-color);
+}
+
+entry .description.w-date {
+    text-align: justify;
+    padding-left: 5%;
+}
+
+entry .links {
+    flex: 10%;
+    padding-left: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+entry .links img {
+    flex: auto;
+    height: 30px;
 }
 
 /* Navigation bar */
@@ -154,7 +237,6 @@ footer .language-select {
 /* Description row */
 
 row#description {
-    background-color: #0e1215;
     padding-top: var(--nav-bar-size);
     padding-left: 0%;
     padding-right: 0%;
@@ -179,7 +261,7 @@ row#description {
 }
 
 .description .introduction {
-    font-size: 20pt;
+    font-size: 18pt;
     font-style: italic;
 }
 
@@ -189,26 +271,7 @@ row#description {
 
 /* Proyects row */
 
-row#proyects {
-    background-color: #0e0e20;
-}
-
-#proyects .title {
-    text-align: center;
-    flex: 15%;
-    padding-right: 2%;
-}
-
-#proyects .entries {
-    flex: 85%;
-    font-size: 16pt;
-    display: flex;
-    flex-direction: column;
-    padding-left: 2%;
-    border-left: var(--vsep-width) solid var(--bar-color);
-}
-
-.entries pr-entry {
+#proyects entry {
     text-align: justify;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -217,81 +280,10 @@ row#proyects {
     align-items: center;
 }
 
-pr-entry .title {
-    flex: 25%;
-    font-style: italic;
-    padding-right: 1%;
-    text-align: center;
-}
-
-pr-entry .description {
-    flex: 65%;
-    padding-left: 1%;
-    padding-right: 1%;
-    border-left: var(--vsep-width) solid var(--bar-color);
-    border-right: var(--vsep-width) solid var(--bar-color);
-}
-
-pr-entry .links {
-    flex: 10%;
-    padding-left: 1%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-around;
-}
-
-pr-entry .links img {
-    flex: auto;
-    height: 30px;
-}
-
 /* Education row */
 
-row#education {
-    background-color: #200e0e;
-}
 
-#education .title {
-    text-align: center;
-    flex: 15%;
-    padding-right: 2%;
-}
 
-#education .entries {
-    flex: 85%;
-    font-size: 16pt;
-    display: flex;
-    flex-direction: column;
-    padding-left: 2%;
-    border-left: var(--vsep-width) solid var(--bar-color);
-}
+/* Awards */
 
-.entries ed-entry {
-    display: flex;
-    flex-direction: column;
-}
 
-ed-entry .title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-ed-entry .title .name {
-    text-align: left;
-    font-style: italic;
-}
-
-ed-entry .title .date {
-    font-size: 14pt;
-    text-align: left;
-    padding-left: 2%;
-    color: #aaaaaa;
-}
-
-ed-entry .description {
-    text-align: justify;
-    padding-left: 5%;
-}

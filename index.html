@@ -42,6 +42,12 @@
                 <li class="nav-item" onclick="smoothScroll('education')">
                     <p data-key="nav-education"></p>
                 </li>
+                <li class="nav-item" onclick="smoothScroll('experience')">
+                    <p data-key="nav-experience"></p>
+                </li>
+                <li class="nav-item" onclick="smoothScroll('awards')">
+                    <p data-key="nav-awards"></p>
+                </li>
             </ul>
         </div>
 
@@ -67,9 +73,9 @@
         <row id="proyects">
             <h2 class="title" data-key="proy-title"></h2>
             <div class="entries">
-                <pr-entry>
-                    <h3 class="title" data-key="proy-p1-title"></h3>
-                    <div class="description" data-key="proy-p1-desc"></div>
+                <entry>
+                    <h3 class="title w-links" data-key="proy-p1-title"></h3>
+                    <div class="description w-links" data-key="proy-p1-desc"></div>
                     <div class="links">
                         <a href="#" id="p1-link1">
                             <img src="img/www.svg" alt="Web" title="Website">
@@ -78,17 +84,17 @@
                             <img src="img/github.svg" alt="GitHub" title="GitHub repo">
                         </a>
                     </div>
-                </pr-entry>
-                <pr-entry>
-                    <h3 class="title" data-key="proy-p2-title"></h3>
-                    <div class="description" data-key="proy-p2-desc"></div>
+                </entry>
+                <entry>
+                    <h3 class="title w-links" data-key="proy-p2-title"></h3>
+                    <div class="description w-links" data-key="proy-p2-desc"></div>
                     <div class="links" data-key="proy-p2-link"></div>
-                </pr-entry>
-                <pr-entry>
-                    <h3 class="title" data-key="proy-p3-title"></h3>
-                    <div class="description" data-key="proy-p3-desc"></div>
+                </entry>
+                <entry>
+                    <h3 class="title w-links" data-key="proy-p3-title"></h3>
+                    <div class="description w-links" data-key="proy-p3-desc"></div>
                     <div class="links" data-key="proy-p3-link"></div>
-                </pr-entry>
+                </entry>
             </div>
         </row>
 
@@ -97,27 +103,84 @@
         <row id="education">
             <h2 class="title" data-key="ed-title"></h2>
             <div class="entries">
-                <ed-entry>
-                    <div class="title">
+                <entry>
+                    <div class="title w-date">
                         <h3 class="name" data-key="ed-e1-title"></h3>
                         <div class="date" data-key="ed-e1-date"></div>
                     </div>
-                    <div class="description" data-key="ed-e1-desc"></div>
-                </ed-entry>
-                <ed-entry>
-                    <div class="title">
+                    <div class="description w-date" data-key="ed-e1-desc"></div>
+                </entry>
+                <entry>
+                    <div class="title w-date">
                         <h3 class="name" data-key="ed-e2-title"></h3>
                         <div class="date" data-key="ed-e2-date"></div>
                     </div>
-                    <div class="description" data-key="ed-e2-desc"></div>
-                </ed-entry>
-                <ed-entry>
-                    <div class="title">
+                    <div class="description w-date" data-key="ed-e2-desc"></div>
+                </entry>
+                <entry>
+                    <div class="title w-date">
                         <h3 class="name" data-key="ed-e3-title"></h3>
                         <div class="date" data-key="ed-e3-date"></div>
                     </div>
-                    <div class="description" data-key="ed-e3-desc"></div>
-                </ed-entry>
+                    <div class="description w-date" data-key="ed-e3-desc"></div>
+                </entry>
+            </div>
+        </row>
+
+        <!-- Experience -->
+        <row id="experience">
+            <h2 class="title" data-key="exp-title"></h2>
+            <div class="entries">
+                <entry>
+                    <div class="title w-date">
+                        <h3 class="name" data-key="exp-e1-title"></h3>
+                        <div class="date" data-key="exp-e1-date"></div>
+                    </div>
+                    <div class="description w-date" data-key="exp-e1-desc"></div>
+                </entry>
+                <entry>
+                    <div class="title w-date">
+                        <h3 class="name" data-key="exp-e2-title"></h3>
+                        <div class="date" data-key="exp-e2-date"></div>
+                    </div>
+                    <div class="description w-date" data-key="exp-e2-desc"></div>
+                </entry>
+                <entry>
+                    <div class="title w-date">
+                        <h3 class="name" data-key="exp-e3-title"></h3>
+                        <div class="date" data-key="exp-e3-date"></div>
+                    </div>
+                    <div class="description w-date" data-key="exp-e3-desc"></div>
+                </entry>
+            </div>
+        </row>
+
+
+        <!-- Awards -->
+        <row id="awards">
+            <h2 class="title" data-key="aw-title"></h2>
+            <div class="entries">
+                <entry>
+                    <div class="title w-date">
+                        <h3 class="name" data-key="aw-e1-title"></h3>
+                        <div class="date" data-key="aw-e1-date"></div>
+                    </div>
+                    <div class="description w-date" data-key="aw-e1-desc"></div>
+                </entry>
+                <entry>
+                    <div class="title w-date">
+                        <h3 class="name" data-key="aw-e2-title"></h3>
+                        <div class="date" data-key="aw-e2-date"></div>
+                    </div>
+                    <div class="description w-date" data-key="aw-e2-desc"></div>
+                </entry>
+                <entry>
+                    <div class="title w-date">
+                        <h3 class="name" data-key="aw-e3-title"></h3>
+                        <div class="date" data-key="aw-e3-date"></div>
+                    </div>
+                    <div class="description w-date" data-key="aw-e3-desc"></div>
+                </entry>
             </div>
         </row>
 
