@@ -85,25 +85,25 @@ entry {
     flex-direction: column;
 }
 
-entry .title.w-links {
+entry .entry-title.w-links {
     flex: 25%;
     font-style: italic;
     padding-right: 1%;
     text-align: center;
 }
 
-entry .title.w-date {
+entry .entry-title.w-date {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-entry .title.w-date .name {
+entry .entry-title.w-date .name {
     text-align: left;
     font-style: italic;
 }
 
-entry .title.w-date .date {
+entry .entry-title.w-date .date {
     font-size: 14pt;
     text-align: left;
     padding-left: 2%;
