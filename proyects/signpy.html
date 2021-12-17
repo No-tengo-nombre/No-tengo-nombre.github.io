@@ -23,6 +23,9 @@
     <div class="main">
         <div id="top-nav-bar">
             <div class="icons">
+                <a href="#" id="signpy-home">
+                    <img src="../img/home.svg" alt="Home" title="Home" id="home-btn">
+                </a>
                 <a href="https://github.com/No-tengo-nombre">
                     <img src="../img/github.svg" alt="Github" title="GitHub">
                 </a>
@@ -34,21 +37,15 @@
                 </a>
             </div>
             <ul id="nav-index" class="index">
-                <li class="nav-item active" onclick="smoothScroll('description')">
-                    <p data-key="nav-about-me"></p>
-                </li>
-                <li class="nav-item" onclick="smoothScroll('proyects'), setActive()">
-                    <p data-key="nav-proyects"></p>
-                </li>
-                <li class="nav-item" onclick="smoothScroll('education')">
-                    <p data-key="nav-education"></p>
+                <li class="nav-item" onclick="smoothScroll('p-title')">
+                    <p data-key="nav-p-title"></p>
                 </li>
             </ul>
         </div>
 
 
         <!-- Proyect title and description -->
-        <row class="p-title">
+        <row class="p-title" id="p-title">
             <title-box>
                 <h1 class="title" data-key="proy-title"></h1>
                 <h4 class="description" data-key="proy-short-desc"></h4>
@@ -59,6 +56,10 @@
                 </a>
             </div>
         </row>
+
+
+        <!-- Image showcase -->
+
 
 
         <!-- Footer -->
@@ -77,5 +78,6 @@
     </div>
 
     <script src="../js/activeNavBarItem.js"></script>
+    <script src="../js/signpyHrefSetter.js"></script>
 </body>
 </html>

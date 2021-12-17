@@ -125,18 +125,16 @@ let langdataSignpy = {
     "languages": {
         "es": {
             "strings": {
-                "nav-about-me": "Sobre mí",
-                "nav-proyects": "Proyectos",
-                "nav-education": "Educación",
+                "nav-p-title": "Inicio",
                 "proy-title": "SignPy",
                 "proy-short-desc": "Software de procesamiento digital de señales"
             },
         },
         "en": {
             "strings": {
-                "nav-about-me": "About me",
-                "nav-proyects": "Proyects",
-                "nav-education": "Education",
+                "nav-p-title": "Home",
+                "proy-title": "SignPy",
+                "proy-short-desc": "Digital signal processing software"
             },
         },
     },

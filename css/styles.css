@@ -143,6 +143,7 @@ entry .links img {
 #top-nav-bar {
     position: fixed;
     display: flex;
+    flex-direction: row;
     align-items: center;
     top: 0%;
     left: 0%;

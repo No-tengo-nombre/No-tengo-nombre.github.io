@@ -1,5 +1,7 @@
 @import "styles.css";
 
+/* Title row */
+
 row.p-title {
     background-color: #0e0e0e;
     display: flex;
@@ -33,3 +35,7 @@ title-box .description {
 .links img {
     height: 80px;
 }
+
+/* Image showcase */
+
+
