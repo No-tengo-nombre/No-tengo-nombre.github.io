@@ -65,6 +65,14 @@ row:nth-child(odd) {
     background-color: var(--color2);
 }
 
+row:first-of-type {
+    padding-top: var(--nav-bar-size);
+}
+
+row:last-of-type {
+    padding-bottom: calc(3% + var(--footer-size));
+}
+
 row .title {
     text-align: center;
     flex: 15%;
@@ -238,7 +246,6 @@ footer .language-select {
 /* Description row */
 
 row#description {
-    padding-top: var(--nav-bar-size);
     padding-left: 0%;
     padding-right: 0%;
 }
