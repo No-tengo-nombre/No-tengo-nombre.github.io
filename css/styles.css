@@ -157,7 +157,7 @@ entry .links img {
     left: 0%;
     width: 100%;
     height: var(--nav-bar-size);
-    background-image: linear-gradient(rgba(14, 14, 14, 0.95), rgba(7, 7, 7, 0.95));
+    background-image: linear-gradient(rgba(14, 14, 14, 0.95), rgba(11, 11, 11, 0.95));
 }
 
 #top-nav-bar .icons {
@@ -221,7 +221,7 @@ footer {
     left: 0%;
     width: 100%;
     height: var(--footer-size);
-    background-image: linear-gradient(rgba(7, 7, 7, 0.95), rgba(14, 14, 14, 0.95));
+    background-image: linear-gradient(rgba(11, 11, 11, 0.95), rgba(14, 14, 14, 0.95));
 }
 
 footer .copyright {

@@ -3,7 +3,7 @@ const rows = document.querySelectorAll("row");
 
 function activeMenu() {
     let len = rows.length;
-    while (--len && window.scrollY + 97 < rows[len].offsetTop) {}
+    while (--len && window.scrollY + 97 < rows[len].offsetTop) { }
     li.forEach(ltx => ltx.classList.remove("active"));
     li[len].classList.add("active");
 }

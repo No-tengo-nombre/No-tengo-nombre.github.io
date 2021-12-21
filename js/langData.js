@@ -105,7 +105,7 @@ let langdataIndex = {
                 "exp-e3-title": "Longer title",
                 "exp-e3-date": "March 2019",
                 "exp-e3-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Feugiat in ante metus dictum at tempor commodo ullamcorper a. Est ante in nibh mauris cursus. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Maecenas accumsan lacus vel facilisis volutpat.",
-                
+
                 "aw-title": "Awards",
                 "aw-e1-title": "Test 1",
                 "aw-e1-date": "March 2019",
