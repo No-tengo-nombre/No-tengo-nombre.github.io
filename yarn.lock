@@ -6765,6 +6765,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"homepage@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "homepage@workspace:."
+  dependencies:
+    "@testing-library/jest-dom": ^5.16.5
+    "@testing-library/react": ^13.4.0
+    "@testing-library/user-event": ^13.5.0
+    gh-pages: ^5.0.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-scripts: ^5.0.1
+    web-vitals: ^2.1.4
+  languageName: unknown
+  linkType: soft
+
 "hoopy@npm:^0.1.4":
   version: 0.1.4
   resolution: "hoopy@npm:0.1.4"
@@ -8418,21 +8433,6 @@ __metadata:
   checksum: 48e4230643e8fdb5c14c11314706d58d9f3fbafe2606be3d6e37da1918ad8bfe39dd87875c726a1b59b9f4da99d87ec3e36d4c528464f0b820f9e91e5cb1c02d
   languageName: node
   linkType: hard
-
-"learning_react@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "learning_react@workspace:."
-  dependencies:
-    "@testing-library/jest-dom": ^5.16.5
-    "@testing-library/react": ^13.4.0
-    "@testing-library/user-event": ^13.5.0
-    gh-pages: ^5.0.0
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-scripts: ^5.0.1
-    web-vitals: ^2.1.4
-  languageName: unknown
-  linkType: soft
 
 "leven@npm:^3.1.0":
   version: 3.1.0
